@@ -1,0 +1,38 @@
+                                              {
+                                                "/student/*": {
+                                                  "target": "https://studenthomeback.herokuapp.com",
+                                                  "secure": false,
+                                                  "changeOrigin": true,
+                                                  "logLevel": "debug"
+                                                },
+                                                "/student/": {
+                                                  "target": "https://studenthomeback.herokuapp.com",
+                                                  "secure": false,
+                                                  "changeOrigin": true,
+                                                  "logLevel": "debug"
+                                                },
+                                                "/landlord/": {
+                                                  "target": "https://studenthomeback.herokuapp.com",
+                                                  "secure": false,
+                                                  "changeOrigin": true,
+                                                  "logLevel": "debug"
+                                                },
+                                                "/landlord/*": {
+                                                  "target": "https://studenthomeback.herokuapp.com",
+                                                  "secure": false,
+                                                  "changeOrigin": true,
+                                                  "logLevel": "debug"
+                                                },
+                                                "/property/": {
+                                                  "target": "https://studenthomeback.herokuapp.com",
+                                                  "secure": false,
+                                                  "changeOrigin": true,
+                                                  "logLevel": "debug"
+                                                },
+                                                "/property/*": {
+                                                  "target": "https://studenthomeback.herokuapp.com",
+                                                  "secure": false,
+                                                  "changeOrigin": true,
+                                                  "logLevel": "debug"
+                                                }
+                                              }

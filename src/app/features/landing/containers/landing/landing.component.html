@@ -1,0 +1,220 @@
+<div>
+    <div class="hero">
+        <div class="hero-layout d-flex justify-content-center align-content-center">
+        </div>
+        <!-- <div class="buttons-wrapper container-inicio">
+            <p style="font-size:25px; color:white">
+                LOGIN
+            </p>
+            <p style="font-size:20px; color:white">
+                Training Gain está enfocado en brindar servicios de entrenamiento físico con un entorno agradable y funcional para aquellas personas que deseen mantenerse en forma desde la comodidad de su hogar. Asimismo, brindar servicios de rehabilitación física para
+                aquellas que han tenido lesión alguna.
+            </p>
+        </div> -->
+    </div>
+    <!-- <div class="countries-wrapper container pt-4 d-flex justify-content-center" style="padding-left:8%;padding-right: 8%;">
+        <mat-card class="w-75">
+            <mat-card-header>
+                <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+                    <mat-button-toggle value="bold">Habitación</mat-button-toggle>
+                    <mat-button-toggle value="italic">Departamento</mat-button-toggle>
+                    <mat-button-toggle value="underline">Roommate</mat-button-toggle>
+                </mat-button-toggle-group>
+            </mat-card-header>
+            <mat-card-content class="p-2">
+                <mat-form-field class="example-full-width w-75">
+                    <mat-label>Ubicación</mat-label>
+                    <textarea matInput placeholder="Agrege ubicación de referencia"></textarea>
+                </mat-form-field>
+                <button  [routerLink]="'/properties'" class="ml-4" mat-raised-button color="primary">Buscar</button>
+            </mat-card-content>
+        </mat-card>
+    </div> -->
+    <div class="countries-wrapper container " style="padding:5%; ">
+        <mat-grid-list [cols]="breakpoint" rowHeight="3:2 " (window:resize)="onResize($event) ">
+            <mat-grid-tile [routerLink]="'/properties'" *ngFor="let item of countries" class="country-wrapper ">
+                <div class="country">
+                    <div class="country-content">
+                        <img class="country-image" [src]="item.image" />
+                        <div class="pt-3 pb-1">{{item.name}}</div>
+                        <div class="pt-2 content" style="max-width:180px;">{{item.content}}</div>
+                    </div>
+                </div>
+            </mat-grid-tile>
+        </mat-grid-list>
+    </div>
+    <div class="section-1 container " style="padding:5%; ">
+        <mat-grid-list [cols]="cols" [rowHeight]="rowheight" (window:resize)="onResize($event) ">
+            <mat-grid-tile class="section-1-wrapper ">
+                <mat-card class="py-4 mx-md-4" style="background-color: #1E203D;">
+                    <mat-card-header>
+                        <div class="d-flex justify-content-center flex-column">
+                            <div class="section-1-name pb-3">¿Listo Para Comenzár tu nueva experiencia?</div>
+                            <p style="color: white;">Puedes obtener una sesión con tu entrenador o rehabilitador en vivo. Nuestra compañía brinda un servicio en el que puedes tener tus sesiones personalizadas las veces que desees.
+                            </p>
+                        </div>
+                    </mat-card-header>
+                    <!-- <mat-card-content class="d-flex justify-content-center" style="padding-top:50px;border-radius:25px">
+                        <button [routerLink]="'/properties'" mat-raised-button class="btn" color="primary">Empezar</button>
+                    </mat-card-content> -->
+                </mat-card>
+            </mat-grid-tile>
+            <mat-grid-tile class="country-wrapper ">
+                <img style="max-height:350px" class="country-image" src="assets/img/imagess.png" />
+            </mat-grid-tile>
+        </mat-grid-list>
+    </div>
+    <div class="section-2 d-flex flex-column flex-md-row py-4">
+        <div class="h-50 w-100 d-flex justify-content-center">
+            <div class="content d-flex flex-column justify-content-start px-4">
+                <p style="font-size:25px ">¿Por qué suscribirte?</p>
+                <p style="font-size:16px;max-width:550px">
+                    Nuestro objetivo es brindar servicios de entrenamiento físico y de rehabilitación, de tal manera que los usuarios tengan experiencia con el uso periódico del mismo para mejorar su calidad de vida.
+                </p>
+                <mat-card-content class="d-flex justify-content-center " style="border-radius:25px">
+                    <button [routerLink]=" '/properties' " class="button" color="warn">Empezar</button>
+                </mat-card-content>
+            </div>
+        </div>
+    </div>
+    <div class="section-1 container " style="padding:5%; ">
+        <mat-grid-list [cols]="cols" [rowHeight]="rowheight" (window:resize)="onResize($event) ">
+            <mat-grid-tile class="country-wrapper ">
+                <div style="padding: 10px;background-color: white;">
+                    <img style="max-height:200px" class="country-image" src="assets/img/Image -8@2x.png" />
+                </div>
+            </mat-grid-tile>
+            <mat-grid-tile class="section-1-wrapper ">
+                <mat-card class="py-4 mx-4" style="background-color: #1E203D;">
+                    <mat-card-header>
+                        <div class="d-flex justify-content-center flex-column">
+                            <p style="max-width:400px;color: white;">
+                                Trabajar en esta compañía ha hecho destacar mis habilidades profesionales, de tal manera que he podido ayudar a muchas personas a mantener un buen estado físico y llevar una buena alimentación.
+                            </p>
+                            <p style="text-align: right;color: whitesmoke;">
+                                Jessica Simons
+                            </p>
+                        </div>
+                    </mat-card-header>
+                </mat-card>
+            </mat-grid-tile>
+        </mat-grid-list>
+    </div>
+    <div class="section-1 container " style="padding:5%; ">
+        <mat-grid-list [cols]="cols" [rowHeight]="rowheight" (window:resize)="onResize($event) ">
+            <mat-grid-tile class="section-1-wrapper ">
+                <mat-card class="py-4 mx-4" style="background-color: #1E203D;">
+                    <div class="d-flex justify-content-center flex-column">
+                        <mat-card-header>
+                            <div class="d-flex justify-content-center flex-column">
+                                <p style="max-width:400px;color: white;">
+                                    Mantenerse en forma es algo muy importante para nuestra vida, ya que nos permite estar más activos al realizar nuestras actividades. Asimismo, regula las cifras de presión arterial.
+                                </p>
+                                <p style="text-align: right;color: whitesmoke;">
+                                    Johana Tizon
+                                </p>
+                            </div>
+                        </mat-card-header>
+                    </div>
+                </mat-card>
+            </mat-grid-tile>
+            <mat-grid-tile class="country-wrapper ">
+                <div style="padding: 10px;background-color: white;">
+                    <img style="max-height:200px" class="country-image" src="assets/img/iii.png" />
+                </div>
+            </mat-grid-tile>
+        </mat-grid-list>
+    </div>
+    <div class="section-1 container " style="padding:5%; ">
+        <mat-grid-list [cols]="cols" [rowHeight]="rowheight" (window:resize)="onResize($event) ">
+            <mat-grid-tile class="section-1-wrapper ">
+                <mat-card class="py-4 mx-4" style="background-color: #1E203D;">
+                    <div class="d-flex justify-content-center flex-column">
+                        <mat-card-header>
+                            <div class="d-flex justify-content-center flex-column">
+                                <p style="max-width:400px;color: white;">
+                                    Llevo más de 20 años ayudando a las personas a recuperarse de alguna lesión que ellos puedan presentar. Es agradable ver cómo las personas se van recuperando poco a poco de sus lesiones.
+                                </p>
+                                <p style="text-align: right;color: whitesmoke;">
+                                    Mary Carmen Tafur
+                                </p>
+                            </div>
+                        </mat-card-header>
+                    </div>
+                </mat-card>
+            </mat-grid-tile>
+            <mat-grid-tile class="section-1-wrapper ">
+                <mat-card class="py-4 mx-4" style="background-color: #1E203D;">
+                    <div class="d-flex justify-content-center flex-column">
+                        <mat-card-header>
+                            <div class="d-flex justify-content-center flex-column">
+                                <p style="max-width:400px;color: white;">
+                                    Es un honor trabajar en esta compañía. Ayudo a las personas a recuperarse de su lesión con mucha paciencia y siempre dándole ánimos a los pacientes.
+                                </p>
+                                <p style="text-align: right;color: whitesmoke;">
+                                    Pedro Orquideo
+                                </p>
+                            </div>
+                        </mat-card-header>
+                    </div>
+                </mat-card>
+            </mat-grid-tile>
+        </mat-grid-list>
+    </div>
+    <div class="section-2 d-flex flex-column flex-md-row py-4">
+        <div class="h-50 w-100  d-flex justify-content-center">
+            <div class="content d-flex flex-column justify-content-start px-4">
+                <p style="font-size:25px ">¡¡¡¡Estamos a tu disposición, NO PIERDAS TIEMPO!!!!</p>
+                <p style="font-size:16px;max-width:550px">
+                    Inscríbete en nuestra compañía, ya que te brindamos servicios de entrenamiento físico y/o rehabilitación
+                </p>
+                <mat-card-content class="d-flex justify-content-center " style="border-radius:25px">
+                    <button [routerLink]=" '/properties' " class="button" color="warn">Empezar</button>
+                </mat-card-content>
+            </div>
+        </div>
+    </div>
+    <div class="section-2 d-flex flex-column flex-md-row py-4">
+        <div class="h-50 w-100  d-flex justify-content-center">
+            <div class="content d-flex flex-column justify-content-start px-4">
+                <p style="font-size:25px ">¿Por qué suscribirte?</p>
+                <p style="font-size:16px;max-width:550px">
+                    Con nosotros tendrás una buena atención y te ayudaremos a recuperarte lo más rápido posible. ¡¡¡NO TE ARREPENTIRÁS!!!
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="countries-wrapper container " style="padding:5%; ">
+        <mat-grid-list [cols]="breakpoint " rowHeight="3:2 " (window:resize)="onResize($event) ">
+            <mat-grid-tile [routerLink]="'/properties'" *ngFor="let item of personas" class="country-wrapper ">
+                <div class="country">
+                    <div class="country-content">
+                        <img class="country-image" [src]="item.image" />
+                        <div class="pt-3 pb-1">{{item.name}}</div>
+                        <div class="pt-2 content" style="max-width:180px;">{{item.content}}</div>
+                    </div>
+                </div>
+            </mat-grid-tile>
+        </mat-grid-list>
+    </div>
+    <div class="d-flex countries-wrapper container " style="padding:5%; ">
+        <div class="d-flex justify-content-center flex-column" style="color: white;">
+            <!-- <div class="text">lorem</div>
+            <div class="subtext">lorem</div>
+            <div class="subtext">lorem</div> -->
+            <div class="subtext" style="max-width: 200px;">Si necesitas más información acerca de la compañía no dudes en contactarte con nosotros.</div>
+        </div>
+        <div class="px-4">
+            <div class="separator"></div>
+        </div>
+        <div class="d-flex justify-content-center flex-column" style="color: white;">
+            <div class="text" style="font-weight: 600;">
+                CONTACTO
+            </div>
+            <div class="subtext">Dirección: Javier Prado Este 217, al costado del Jockey Plaza</div>
+            <div class="subtext">Correo: training_gain@gmail.com</div>
+            <div class="subtext">Celular: 976458901 / 988243776</div>
+        </div>
+    </div>
+
+</div>
